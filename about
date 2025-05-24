@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre este sitio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fafafa; color: #222; }
+        header, footer { background: #222; color: #fff; padding: 1em 2em; }
+        main { padding: 2em; max-width: 900px; margin: auto; }
+        h1, h2 { color: #333366; }
+        section { margin-bottom: 2em; }
+        ul { list-style: disc inside; }
+        .enlaces a { color: #336699; text-decoration: underline; }
+        .imagenes { display: flex; gap: 1em; flex-wrap: wrap; }
+        .imagenes img { max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px #0002; }
+        form { background: #eee; padding: 1em; border-radius: 8px; max-width: 500px; }
+        label { display: block; margin-top: 1em; }
+        textarea { width: 100%; min-height: 80px; }
+        input[type="text"], input[type="email"] { width: 100%; padding: .5em; border-radius: 4px; border: 1px solid #ccc; }
+        input[type="submit"] { background: #336699; color: #fff; border: none; padding: .5em 1em; border-radius: 4px; margin-top: 1em; cursor: pointer; }
+        input[type="submit"]:hover { background: #244366; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre este sitio</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Información general</h2>
+            <p>
+                Bienvenido/a a mi página web. Aquí encontrarás información relevante sobre mis proyectos, intereses y recursos recomendados.
+            </p>
+        </section>
+
+        <section class="enlaces">
+            <h2>Enlaces a otros sitios</h2>
+            <ul>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
+                <li><a href="https://www.unam.mx/" target="_blank">UNAM</a></li>
+                <!-- Agrega más enlaces según necesites -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Bibliografía</h2>
+            <ul>
+                <li>Autor, A. (Año). <i>Título del libro o artículo</i>. Editorial o Revista.</li>
+                <li>Autor, B. (Año). <i>Título de otra referencia</i>. Editorial o Revista.</li>
+                <!-- Añade las referencias relevantes -->
+            </ul>
+        </section>
+
+        <section class="imagenes">
+            <h2>Imágenes</h2>
+            <img src="https://via.placeholder.com/200x150?text=Imagen+1" alt="Descripción de la imagen 1">
+            <img src="https://via.placeholder.com/200x150?text=Imagen+2" alt="Descripción de la imagen 2">
+            <!-- Agrega más imágenes si lo deseas -->
+        </section>
+
+        <section>
+            <h2>Comentarios</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+
+                <input type="submit" value="Enviar comentario">
+            </form>
+            <p style="font-size: .9em; color: #666;">Tu comentario será enviado para su revisión. ¡Gracias por participar!</p>
+            <!-- Nota: Necesitarás configurar un servicio como Formspree, Google Forms, etc., para recibir los comentarios. -->
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Tu Nombre. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
